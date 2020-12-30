@@ -27,6 +27,8 @@
 		241DDA872590A80E00E408B3 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DDA732590A80D00E408B3 /* UITextView+Extensions.swift */; };
 		241DDA882590A80E00E408B3 /* Notifications+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DDA742590A80E00E408B3 /* Notifications+Extensions.swift */; };
 		241DDA9D2590AB0E00E408B3 /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DDA9C2590AB0E00E408B3 /* RegexManager.swift */; };
+		246DBE2E259686EF008B4208 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246DBE2C259686EF008B4208 /* Event.swift */; };
+		246DBE2F259686EF008B4208 /* EventsCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246DBE2D259686EF008B4208 /* EventsCalendarManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		241DDA732590A80D00E408B3 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
 		241DDA742590A80E00E408B3 /* Notifications+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notifications+Extensions.swift"; sourceTree = "<group>"; };
 		241DDA9C2590AB0E00E408B3 /* RegexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexManager.swift; sourceTree = "<group>"; };
+		246DBE2C259686EF008B4208 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		246DBE2D259686EF008B4208 /* EventsCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCalendarManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,9 +190,19 @@
 		241DDA9B2590AB0400E408B3 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				246DBE2B259686E0008B4208 /* Calendar */,
 				241DDA9C2590AB0E00E408B3 /* RegexManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		246DBE2B259686E0008B4208 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				246DBE2C259686EF008B4208 /* Event.swift */,
+				246DBE2D259686EF008B4208 /* EventsCalendarManager.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +288,7 @@
 				241DDA752590A80E00E408B3 /* UIColor+Extensions.swift in Sources */,
 				241DDA7A2590A80E00E408B3 /* UIViewController+Keyboard.swift in Sources */,
 				241DDA802590A80E00E408B3 /* Bundle+Extenstions.swift in Sources */,
+				246DBE2E259686EF008B4208 /* Event.swift in Sources */,
 				241DDA5C2590A7DB00E408B3 /* BaseController.swift in Sources */,
 				241DDA782590A80E00E408B3 /* UIView+Extensions.swift in Sources */,
 				241DDA872590A80E00E408B3 /* UITextView+Extensions.swift in Sources */,
@@ -288,6 +303,7 @@
 				241DDA862590A80E00E408B3 /* String+Extensions.swift in Sources */,
 				241DDA772590A80E00E408B3 /* UIImage+Extensions.swift in Sources */,
 				241DDA882590A80E00E408B3 /* Notifications+Extensions.swift in Sources */,
+				246DBE2F259686EF008B4208 /* EventsCalendarManager.swift in Sources */,
 				241DDA7F2590A80E00E408B3 /* UINavigationController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
