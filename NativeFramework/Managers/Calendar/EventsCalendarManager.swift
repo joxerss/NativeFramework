@@ -10,11 +10,11 @@ import UIKit
 import EventKit
 import EventKitUI
 
-enum CustomeError {
+public enum CustomeError {
     case failure(Error)
     case calendarAccessDenied
     case calendarAccessDeniedOrRestricted
-    case calendarModuleOpened
+    //case calendarModuleOpened
     case eventAddedToCalendar
     case eventNotAddedToCalendar
     case eventAlreadyExistsInCalendar
@@ -23,7 +23,7 @@ enum CustomeError {
 //typealias ResultCustomError = Dictionary<Bool, ??>
 //typealias EventsCalendarManagerResponse = (_ result: ResultCustomError<Bool, CustomError>) -> Void
 
-class EventsCalendarManager: NSObject {
+open class EventsCalendarManager: NSObject {
     
     // MARK: - Varibles
     private let kUserDefaultsCalendar = "Costless_calendarID"
@@ -33,14 +33,14 @@ class EventsCalendarManager: NSObject {
     
     // MARK: - Lifecycle
     
-    override init() {
+    public override init() {
         super.init()
         eventStore = EKEventStore()
     }
     
     // MARK: - Appearances
     
-    func setupAppearances() {
+    open func setupAppearances() {
         eventModalVC.navigationBar.tintColor = .white
         eventModalVC.navigationBar.barTintColor = .orange
         eventModalVC.navigationBar.isTranslucent = false
@@ -122,7 +122,7 @@ class EventsCalendarManager: NSObject {
     // MARK: - Calendar
     // Create or get costless calendar
     
-    func getCalendar() -> EKCalendar? {
+    open func getCalendar() -> EKCalendar? {
         let defaults = UserDefaults.standard
 
         checkIsCalendarExist()
@@ -186,7 +186,7 @@ class EventsCalendarManager: NSObject {
     
     // Show event kit ui to add event to calendar
             
-    func presentCalendarModalToAddEvent(event: Event, completion : @escaping ((CustomeError) -> ()) ) {
+    open func presentCalendarModalToAddEvent(event: Event, completion : @escaping ((CustomeError) -> ()) ) {
         let authStatus = getAuthorizationStatus()
         switch authStatus {
         case .authorized:
@@ -230,7 +230,7 @@ class EventsCalendarManager: NSObject {
     // Check Calendar permissions auth status
     // Try to add an event to the calendar if authorized
     
-    func addEventToCalendar(event: Event, completion : @escaping ((CustomeError)->()) ) {
+    open func addEventToCalendar(event: Event, completion : @escaping ((CustomeError)->()) ) {
         let authStatus = getAuthorizationStatus()
         switch authStatus {
         case .authorized:
@@ -294,7 +294,7 @@ class EventsCalendarManager: NSObject {
 
 extension EventsCalendarManager: EKEventEditViewDelegate {
     
-    func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction) {
+    public func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction) {
         controller.dismiss(animated: true, completion: nil)
     }
 }
@@ -303,7 +303,7 @@ extension EventsCalendarManager: EKEventEditViewDelegate {
 
 extension EventsCalendarManager {
     
-    func showSettingsAlert() {
+    open func showSettingsAlert() {
         let yes = UIAlertAction(title: "yes", style: .default, handler: { (alert) in
             if let url = URL(string: UIApplication.openSettingsURLString) {
                 DispatchQueue.main.async {

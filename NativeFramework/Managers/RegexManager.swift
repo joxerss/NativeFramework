@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RegexManager: NSObject {
+open class RegexManager: NSObject {
     
     /// Result string must look like url
     ///

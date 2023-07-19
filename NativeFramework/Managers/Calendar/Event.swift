@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Event: NSObject {
+open class Event: NSObject {
     
     var name: String = String()
     var dateStart: Date = Date()
@@ -17,7 +17,7 @@ class Event: NSObject {
     var isFullDay: Bool = false
     var deepLink: String? = nil
     
-    init(name: String, dateStart: Date, dateEnd: Date?, notes: String, isFullDay: Bool, deepLink: String? = nil) {
+    public init(name: String, dateStart: Date, dateEnd: Date?, notes: String, isFullDay: Bool, deepLink: String? = nil) {
         super.init()
         
         self.name = name

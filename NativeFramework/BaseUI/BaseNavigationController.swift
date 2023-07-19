@@ -8,9 +8,9 @@
 
 import UIKit
 
-class BaseNavigationController: UINavigationController {
+open class BaseNavigationController: UINavigationController {
 
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -20,7 +20,7 @@ class BaseNavigationController: UINavigationController {
     /// This method will call when System Color Scheme did changed.
     /// It will call by system **automatically**.
     /// - Parameter previousTraitCollection: System UITraitCollection
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    open override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
 
 //        guard UIApplication.shared.applicationState == .inactive else {
@@ -30,7 +30,7 @@ class BaseNavigationController: UINavigationController {
         setupAppearances()
     }
     
-    @objc func setupAppearances() -> Void {
+    @objc open func setupAppearances() -> Void {
         //UINavigationBar.appearance().barTintColor = .clear
         //UINavigationBar.appearance().tintColor = .red
         //UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.bold)]

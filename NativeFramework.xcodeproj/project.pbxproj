@@ -27,6 +27,7 @@
 		241DDA872590A80E00E408B3 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DDA732590A80D00E408B3 /* UITextView+Extensions.swift */; };
 		241DDA882590A80E00E408B3 /* Notifications+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DDA742590A80E00E408B3 /* Notifications+Extensions.swift */; };
 		241DDA9D2590AB0E00E408B3 /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DDA9C2590AB0E00E408B3 /* RegexManager.swift */; };
+		243961B725EF9C3200E23691 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 243961B625EF9C3200E23691 /* README.md */; };
 		246DBE2E259686EF008B4208 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246DBE2C259686EF008B4208 /* Event.swift */; };
 		246DBE2F259686EF008B4208 /* EventsCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246DBE2D259686EF008B4208 /* EventsCalendarManager.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		241DDA732590A80D00E408B3 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
 		241DDA742590A80E00E408B3 /* Notifications+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notifications+Extensions.swift"; sourceTree = "<group>"; };
 		241DDA9C2590AB0E00E408B3 /* RegexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexManager.swift; sourceTree = "<group>"; };
+		243961B625EF9C3200E23691 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		246DBE2C259686EF008B4208 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		246DBE2D259686EF008B4208 /* EventsCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCalendarManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 		241DDA3E2590A72000E408B3 = {
 			isa = PBXGroup;
 			children = (
+				243961B625EF9C3200E23691 /* README.md */,
 				241DDA4A2590A72000E408B3 /* NativeFramework */,
 				241DDA492590A72000E408B3 /* Products */,
 			);
@@ -274,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243961B725EF9C3200E23691 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,15 +440,18 @@
 		241DDA512590A72000E408B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8MF5X3F4FR;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NativeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,15 +469,18 @@
 		241DDA522590A72000E408B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8MF5X3F4FR;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NativeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
