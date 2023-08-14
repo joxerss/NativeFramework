@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="108" id="KGk-i7-Jjw" customClass="ToasterTextCell" customModule="SourceProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phi-cw-z9Z">
+                        <rect key="frame" x="8" y="8" width="309" height="92"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_check_circle" translatesAutoresizingMaskIntoConstraints="NO" id="m1R-aa-J6U">
+                                <rect key="frame" x="110" y="38" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Zr4-gX-x3B"/>
+                                    <constraint firstAttribute="width" secondItem="m1R-aa-J6U" secondAttribute="height" multiplier="1:1" id="dYP-1U-PDC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io0-S9-FPO">
+                                <rect key="frame" x="134" y="36" width="41.333333333333343" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="Io0-S9-FPO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Phi-cw-z9Z" secondAttribute="top" constant="8" id="0cD-Ms-y0t"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="m1R-aa-J6U" secondAttribute="bottom" constant="8" id="7rz-ik-FvU"/>
+                            <constraint firstItem="m1R-aa-J6U" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Phi-cw-z9Z" secondAttribute="top" constant="8" id="H6A-h6-XMS"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Io0-S9-FPO" secondAttribute="bottom" constant="8" id="Unp-jR-bBO"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Io0-S9-FPO" secondAttribute="trailing" constant="8" id="VaW-Nd-hYx"/>
+                            <constraint firstItem="Io0-S9-FPO" firstAttribute="centerY" secondItem="Phi-cw-z9Z" secondAttribute="centerY" id="YDE-bK-RBl"/>
+                            <constraint firstItem="Io0-S9-FPO" firstAttribute="centerX" secondItem="Phi-cw-z9Z" secondAttribute="centerX" id="b41-18-MgW"/>
+                            <constraint firstItem="Io0-S9-FPO" firstAttribute="centerY" secondItem="m1R-aa-J6U" secondAttribute="centerY" id="vM3-ia-XDo"/>
+                            <constraint firstItem="m1R-aa-J6U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Phi-cw-z9Z" secondAttribute="leading" constant="8" id="x4l-5J-j62"/>
+                            <constraint firstItem="Io0-S9-FPO" firstAttribute="leading" secondItem="m1R-aa-J6U" secondAttribute="trailing" constant="8" id="zOj-Bh-hlq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Phi-cw-z9Z" secondAttribute="bottom" constant="8" id="N4i-Q2-Dab"/>
+                    <constraint firstItem="Phi-cw-z9Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Q2q-sM-yas"/>
+                    <constraint firstAttribute="trailing" secondItem="Phi-cw-z9Z" secondAttribute="trailing" constant="8" id="prq-H3-Ftl"/>
+                    <constraint firstItem="Phi-cw-z9Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="rO7-W1-SfA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="conetentBGView" destination="Phi-cw-z9Z" id="wzW-Is-8xw"/>
+                <outlet property="icon" destination="m1R-aa-J6U" id="JoO-HB-PfF"/>
+                <outlet property="title" destination="Io0-S9-FPO" id="04d-v2-HDQ"/>
+            </connections>
+            <point key="canvasLocation" x="14.503816793893129" y="64.08450704225352"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_check_circle" width="24" height="24"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

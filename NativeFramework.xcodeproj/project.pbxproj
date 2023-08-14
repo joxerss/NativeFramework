@@ -30,6 +30,32 @@
 		243961B725EF9C3200E23691 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 243961B625EF9C3200E23691 /* README.md */; };
 		246DBE2E259686EF008B4208 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246DBE2C259686EF008B4208 /* Event.swift */; };
 		246DBE2F259686EF008B4208 /* EventsCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246DBE2D259686EF008B4208 /* EventsCalendarManager.swift */; };
+		304C86E12A8AD764006F182A /* ToasterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86E02A8AD764006F182A /* ToasterModel.swift */; };
+		304C86E52A8AD770006F182A /* MessageRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86E22A8AD770006F182A /* MessageRootViewController.swift */; };
+		304C86E62A8AD770006F182A /* MessagesRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304C86E32A8AD770006F182A /* MessagesRootViewController.xib */; };
+		304C86E72A8AD770006F182A /* MessagesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86E42A8AD770006F182A /* MessagesWindow.swift */; };
+		304C86E92A8AD778006F182A /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86E82A8AD778006F182A /* MessagesController.swift */; };
+		304C86EC2A8AD782006F182A /* ToastersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86EA2A8AD782006F182A /* ToastersRouter.swift */; };
+		304C86ED2A8AD782006F182A /* ToastersQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86EB2A8AD782006F182A /* ToastersQueue.swift */; };
+		304C86F02A8AD78B006F182A /* ToastersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86EE2A8AD78B006F182A /* ToastersViewController.swift */; };
+		304C86F12A8AD78B006F182A /* ToastersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304C86EF2A8AD78B006F182A /* ToastersViewController.xib */; };
+		304C86F72A8AD79C006F182A /* ToasterTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86F32A8AD79C006F182A /* ToasterTextCell.swift */; };
+		304C86F82A8AD79C006F182A /* TosterCountdownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304C86F42A8AD79C006F182A /* TosterCountdownCell.xib */; };
+		304C86F92A8AD79C006F182A /* ToasterTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304C86F52A8AD79C006F182A /* ToasterTextCell.xib */; };
+		304C86FA2A8AD79C006F182A /* TosterCountdownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86F62A8AD79C006F182A /* TosterCountdownCell.swift */; };
+		304C87002A8AD813006F182A /* HitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86FE2A8AD813006F182A /* HitView.swift */; };
+		304C87012A8AD813006F182A /* HitTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C86FF2A8AD813006F182A /* HitTableView.swift */; };
+		304C87032A8AD9D8006F182A /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C87022A8AD9D8006F182A /* NSDate+Extensions.swift */; };
+		304C870F2A8ADB5F006F182A /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 304C87062A8ADB5F006F182A /* Inter-Medium.ttf */; };
+		304C87102A8ADB5F006F182A /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 304C87072A8ADB5F006F182A /* Inter-Bold.ttf */; };
+		304C87112A8ADB5F006F182A /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 304C87082A8ADB5F006F182A /* Inter-ExtraBold.ttf */; };
+		304C87122A8ADB5F006F182A /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 304C87092A8ADB5F006F182A /* Inter-Regular.ttf */; };
+		304C87132A8ADB5F006F182A /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 304C870A2A8ADB5F006F182A /* Inter-Thin.ttf */; };
+		304C87142A8ADB5F006F182A /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 304C870B2A8ADB5F006F182A /* Inter-Light.ttf */; };
+		304C87152A8ADB5F006F182A /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 304C870C2A8ADB5F006F182A /* Inter-ExtraLight.ttf */; };
+		304C87162A8ADB5F006F182A /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 304C870D2A8ADB5F006F182A /* Inter-SemiBold.ttf */; };
+		304C87172A8ADB5F006F182A /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 304C870E2A8ADB5F006F182A /* Inter-Black.ttf */; };
+		304C871A2A8ADBE4006F182A /* RPCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C87192A8ADBE4006F182A /* RPCircularProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +89,32 @@
 		243961B625EF9C3200E23691 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		246DBE2C259686EF008B4208 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		246DBE2D259686EF008B4208 /* EventsCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCalendarManager.swift; sourceTree = "<group>"; };
+		304C86E02A8AD764006F182A /* ToasterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToasterModel.swift; sourceTree = "<group>"; };
+		304C86E22A8AD770006F182A /* MessageRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRootViewController.swift; sourceTree = "<group>"; };
+		304C86E32A8AD770006F182A /* MessagesRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesRootViewController.xib; sourceTree = "<group>"; };
+		304C86E42A8AD770006F182A /* MessagesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesWindow.swift; sourceTree = "<group>"; };
+		304C86E82A8AD778006F182A /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		304C86EA2A8AD782006F182A /* ToastersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastersRouter.swift; sourceTree = "<group>"; };
+		304C86EB2A8AD782006F182A /* ToastersQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastersQueue.swift; sourceTree = "<group>"; };
+		304C86EE2A8AD78B006F182A /* ToastersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastersViewController.swift; sourceTree = "<group>"; };
+		304C86EF2A8AD78B006F182A /* ToastersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastersViewController.xib; sourceTree = "<group>"; };
+		304C86F32A8AD79C006F182A /* ToasterTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToasterTextCell.swift; sourceTree = "<group>"; };
+		304C86F42A8AD79C006F182A /* TosterCountdownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TosterCountdownCell.xib; sourceTree = "<group>"; };
+		304C86F52A8AD79C006F182A /* ToasterTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToasterTextCell.xib; sourceTree = "<group>"; };
+		304C86F62A8AD79C006F182A /* TosterCountdownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TosterCountdownCell.swift; sourceTree = "<group>"; };
+		304C86FE2A8AD813006F182A /* HitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitView.swift; sourceTree = "<group>"; };
+		304C86FF2A8AD813006F182A /* HitTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitTableView.swift; sourceTree = "<group>"; };
+		304C87022A8AD9D8006F182A /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
+		304C87062A8ADB5F006F182A /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		304C87072A8ADB5F006F182A /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		304C87082A8ADB5F006F182A /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		304C87092A8ADB5F006F182A /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		304C870A2A8ADB5F006F182A /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		304C870B2A8ADB5F006F182A /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		304C870C2A8ADB5F006F182A /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		304C870D2A8ADB5F006F182A /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		304C870E2A8ADB5F006F182A /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		304C87192A8ADBE4006F182A /* RPCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPCircularProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +148,10 @@
 		241DDA4A2590A72000E408B3 /* NativeFramework */ = {
 			isa = PBXGroup;
 			children = (
+				304C87042A8ADB45006F182A /* Resources */,
 				241DDA9B2590AB0400E408B3 /* Managers */,
 				241DDA542590A7C600E408B3 /* BaseUI */,
+				304C86FB2A8AD7E8006F182A /* Controls */,
 				241DDA602590A7F800E408B3 /* Extensiosn */,
 				241DDA4B2590A72000E408B3 /* NativeFramework.h */,
 				241DDA4C2590A72000E408B3 /* Info.plist */,
@@ -142,6 +196,7 @@
 				241DDA732590A80D00E408B3 /* UITextView+Extensions.swift */,
 				241DDA642590A80D00E408B3 /* UIView+Extensions.swift */,
 				241DDA662590A80D00E408B3 /* UIViewController+Keyboard.swift */,
+				304C87022A8AD9D8006F182A /* NSDate+Extensions.swift */,
 			);
 			path = Native;
 			sourceTree = "<group>";
@@ -193,6 +248,7 @@
 		241DDA9B2590AB0400E408B3 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				304C86DB2A8AD71C006F182A /* Messages */,
 				246DBE2B259686E0008B4208 /* Calendar */,
 				241DDA9C2590AB0E00E408B3 /* RegexManager.swift */,
 			);
@@ -206,6 +262,116 @@
 				246DBE2D259686EF008B4208 /* EventsCalendarManager.swift */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		304C86DB2A8AD71C006F182A /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				304C86E82A8AD778006F182A /* MessagesController.swift */,
+				304C86DC2A8AD72C006F182A /* Models */,
+				304C86DD2A8AD733006F182A /* MessagesContaiter */,
+				304C86DF2A8AD74A006F182A /* ToastersRouter */,
+				304C86DE2A8AD741006F182A /* ToastersUI */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		304C86DC2A8AD72C006F182A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				304C86E02A8AD764006F182A /* ToasterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		304C86DD2A8AD733006F182A /* MessagesContaiter */ = {
+			isa = PBXGroup;
+			children = (
+				304C86E22A8AD770006F182A /* MessageRootViewController.swift */,
+				304C86E32A8AD770006F182A /* MessagesRootViewController.xib */,
+				304C86E42A8AD770006F182A /* MessagesWindow.swift */,
+			);
+			path = MessagesContaiter;
+			sourceTree = "<group>";
+		};
+		304C86DE2A8AD741006F182A /* ToastersUI */ = {
+			isa = PBXGroup;
+			children = (
+				304C86F22A8AD793006F182A /* Cells */,
+				304C86EE2A8AD78B006F182A /* ToastersViewController.swift */,
+				304C86EF2A8AD78B006F182A /* ToastersViewController.xib */,
+			);
+			path = ToastersUI;
+			sourceTree = "<group>";
+		};
+		304C86DF2A8AD74A006F182A /* ToastersRouter */ = {
+			isa = PBXGroup;
+			children = (
+				304C86EB2A8AD782006F182A /* ToastersQueue.swift */,
+				304C86EA2A8AD782006F182A /* ToastersRouter.swift */,
+			);
+			path = ToastersRouter;
+			sourceTree = "<group>";
+		};
+		304C86F22A8AD793006F182A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				304C86F32A8AD79C006F182A /* ToasterTextCell.swift */,
+				304C86F52A8AD79C006F182A /* ToasterTextCell.xib */,
+				304C86F62A8AD79C006F182A /* TosterCountdownCell.swift */,
+				304C86F42A8AD79C006F182A /* TosterCountdownCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		304C86FB2A8AD7E8006F182A /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				304C86FD2A8AD809006F182A /* HittableControls */,
+				304C87192A8ADBE4006F182A /* RPCircularProgress.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		304C86FD2A8AD809006F182A /* HittableControls */ = {
+			isa = PBXGroup;
+			children = (
+				304C86FF2A8AD813006F182A /* HitTableView.swift */,
+				304C86FE2A8AD813006F182A /* HitView.swift */,
+			);
+			path = HittableControls;
+			sourceTree = "<group>";
+		};
+		304C87042A8ADB45006F182A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				304C87052A8ADB4D006F182A /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		304C87052A8ADB4D006F182A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				304C87182A8ADB68006F182A /* Inter */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		304C87182A8ADB68006F182A /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				304C870E2A8ADB5F006F182A /* Inter-Black.ttf */,
+				304C87072A8ADB5F006F182A /* Inter-Bold.ttf */,
+				304C87082A8ADB5F006F182A /* Inter-ExtraBold.ttf */,
+				304C870C2A8ADB5F006F182A /* Inter-ExtraLight.ttf */,
+				304C870B2A8ADB5F006F182A /* Inter-Light.ttf */,
+				304C87062A8ADB5F006F182A /* Inter-Medium.ttf */,
+				304C87092A8ADB5F006F182A /* Inter-Regular.ttf */,
+				304C870D2A8ADB5F006F182A /* Inter-SemiBold.ttf */,
+				304C870A2A8ADB5F006F182A /* Inter-Thin.ttf */,
+			);
+			path = Inter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +443,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304C86E62A8AD770006F182A /* MessagesRootViewController.xib in Resources */,
+				304C87122A8ADB5F006F182A /* Inter-Regular.ttf in Resources */,
 				243961B725EF9C3200E23691 /* README.md in Resources */,
+				304C870F2A8ADB5F006F182A /* Inter-Medium.ttf in Resources */,
+				304C87162A8ADB5F006F182A /* Inter-SemiBold.ttf in Resources */,
+				304C87112A8ADB5F006F182A /* Inter-ExtraBold.ttf in Resources */,
+				304C87102A8ADB5F006F182A /* Inter-Bold.ttf in Resources */,
+				304C86F82A8AD79C006F182A /* TosterCountdownCell.xib in Resources */,
+				304C87152A8ADB5F006F182A /* Inter-ExtraLight.ttf in Resources */,
+				304C86F12A8AD78B006F182A /* ToastersViewController.xib in Resources */,
+				304C87142A8ADB5F006F182A /* Inter-Light.ttf in Resources */,
+				304C87132A8ADB5F006F182A /* Inter-Thin.ttf in Resources */,
+				304C86F92A8AD79C006F182A /* ToasterTextCell.xib in Resources */,
+				304C87172A8ADB5F006F182A /* Inter-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +467,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304C87032A8AD9D8006F182A /* NSDate+Extensions.swift in Sources */,
 				241DDA5B2590A7DB00E408B3 /* BaseCell.swift in Sources */,
 				241DDA752590A80E00E408B3 /* UIColor+Extensions.swift in Sources */,
+				304C86E52A8AD770006F182A /* MessageRootViewController.swift in Sources */,
+				304C87002A8AD813006F182A /* HitView.swift in Sources */,
 				241DDA7A2590A80E00E408B3 /* UIViewController+Keyboard.swift in Sources */,
 				241DDA802590A80E00E408B3 /* Bundle+Extenstions.swift in Sources */,
 				246DBE2E259686EF008B4208 /* Event.swift in Sources */,
@@ -297,18 +479,28 @@
 				241DDA782590A80E00E408B3 /* UIView+Extensions.swift in Sources */,
 				241DDA872590A80E00E408B3 /* UITextView+Extensions.swift in Sources */,
 				241DDA5E2590A7DB00E408B3 /* BaseTabBarController.swift in Sources */,
+				304C86E92A8AD778006F182A /* MessagesController.swift in Sources */,
 				241DDA5D2590A7DB00E408B3 /* BaseTableViewController.swift in Sources */,
+				304C86FA2A8AD79C006F182A /* TosterCountdownCell.swift in Sources */,
 				241DDA812590A80E00E408B3 /* UITableView+Extensions.swift in Sources */,
 				241DDA7D2590A80E00E408B3 /* UIImageView+Extensions.swift in Sources */,
 				241DDA9D2590AB0E00E408B3 /* RegexManager.swift in Sources */,
 				241DDA5A2590A7DB00E408B3 /* BaseNavigationController.swift in Sources */,
+				304C86ED2A8AD782006F182A /* ToastersQueue.swift in Sources */,
 				241DDA762590A80E00E408B3 /* UIFont+Extensions.swift in Sources */,
+				304C871A2A8ADBE4006F182A /* RPCircularProgress.swift in Sources */,
+				304C86EC2A8AD782006F182A /* ToastersRouter.swift in Sources */,
+				304C87012A8AD813006F182A /* HitTableView.swift in Sources */,
 				241DDA7E2590A80E00E408B3 /* ConvertExtensions.swift in Sources */,
+				304C86E12A8AD764006F182A /* ToasterModel.swift in Sources */,
+				304C86F72A8AD79C006F182A /* ToasterTextCell.swift in Sources */,
 				241DDA862590A80E00E408B3 /* String+Extensions.swift in Sources */,
 				241DDA772590A80E00E408B3 /* UIImage+Extensions.swift in Sources */,
 				241DDA882590A80E00E408B3 /* Notifications+Extensions.swift in Sources */,
 				246DBE2F259686EF008B4208 /* EventsCalendarManager.swift in Sources */,
 				241DDA7F2590A80E00E408B3 /* UINavigationController+Extensions.swift in Sources */,
+				304C86E72A8AD770006F182A /* MessagesWindow.swift in Sources */,
+				304C86F02A8AD78B006F182A /* ToastersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

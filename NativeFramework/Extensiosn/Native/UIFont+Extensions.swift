@@ -22,7 +22,15 @@ extension UIFont {
     /// }
     /// ```
     enum FontFamily: String {
-        case systemRegular = "a"
+        case interBlack = "Inter-Black"
+        case interBold = "Inter-Bold"
+        case interExtraBold = "Inter-ExtraBold"
+        case interExtraLight = "Inter-ExtraLight"
+        case interLight = "Inter-Light"
+        case interMedium = "Inter-Medium"
+        case interRegular = "Inter-Regular"
+        case interSemiBold = "Inter-SemiBold"
+        case interThin = "Inter-Thin"
     }
     
     
@@ -31,9 +39,16 @@ extension UIFont {
     ///   - size: font size in `px`.
     ///   - fontFamily: enum `FontFamily` or extended property.
     /// - Returns: IFont from name.
-    static func customFont(_ size: CGFloat = 16.0,
-                               _ fontFamily: FontFamily) -> UIFont {
+    static func customFont(_ fontFamily: FontFamily,
+                           _ size: CGFloat = 16.0) -> UIFont {
         return UIFont(name: "fontFamily.rawValue", size: size)!
     }
+    
+    /// Font
+    /*
+    static public func interBlack(_ size: CGFloat = 16.0) -> UIFont {
+        return UIFont(name: "Inter-Black", size: size)!
+    }
+     */
     
 }
